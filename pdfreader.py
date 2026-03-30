@@ -246,10 +246,10 @@ st.header("PDF Chatbot (RAG)")
 st.write("Upload the PDF to Ask Questions")
 
 st.sidebar.header("Upload Dataset")
-upload_file = st.sidebar.file_uploader("Upload The PDF File", type="csv")
+upload_file = st.sidebar.file_uploader("Upload The PDF File", type="pdf")
 
 if upload_file is not None:
-    df = pd.read_csv(upload_file)
+    df = pdfReader(upload_file)
 
     st.subheader("Dataset Preview")
     st.write("File uploaded successfully")
