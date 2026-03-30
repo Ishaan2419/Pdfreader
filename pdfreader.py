@@ -107,9 +107,9 @@ st.markdown("""
         font-weight: bold;
         margin-bottom: 10px;
     }
-    .block-container {
-    padding-top: 2rem !important;
-    }
+    .upload-section {
+    margin-top: -40px;
+     }
     .subtitle {
         text-align: center;
         font-size: 18px;
@@ -156,8 +156,12 @@ embed_model, generator = load_models()
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.subheader("📂 Upload PDF")
-    uploaded_file = st.file_uploader("", type="pdf")
+    st.markdown('<div class="upload-section">', unsafe_allow_html=True)
+
+    st.markdown("### 📂 Upload PDF")
+    uploaded_file = st.file_uploader(" ", type="pdf")
+
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
     st.subheader("💬 Ask Questions")
