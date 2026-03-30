@@ -15,6 +15,12 @@ def load_models():
     return embed_model, generator
 
 embed_model, generator = load_models()
+st.image("rr.png", width=40)
+st.subheader("AI Answer")
+st.markdown(
+    "<h3><img src='rr.png' width='30' style='vertical-align:middle;'> AI Answer</h3>",
+    unsafe_allow_html=True
+)
 st.header("🤖 PDF Chatbot (RAG)")
 st.write("Upload the PDF to Ask Questions")
 
