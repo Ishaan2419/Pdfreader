@@ -75,8 +75,7 @@ if uploaded_file is not None:
         # Display
         st.subheader("🧠 Answer:")
         st.write(answer.strip())
-        """
-"""
+    
 import streamlit as st
 import faiss
 import numpy as np
