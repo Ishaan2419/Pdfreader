@@ -107,9 +107,7 @@ st.markdown("""
         font-weight: bold;
         margin-bottom: 10px;
     }
-    .upload-section {
-    margin-top: -90px;
-     }
+    
     .subtitle {
         text-align: center;
         font-size: 18px;
@@ -129,7 +127,7 @@ st.markdown("""
         margin-top: 10px;
     }
     .upload-section {
-    margin-top: 10px;
+    margin-top: -60px;
      }
    
     </style>
