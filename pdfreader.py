@@ -15,7 +15,7 @@ def load_models():
     return embed_model, generator
 
 embed_model, generator = load_models()
-st.header("⚙️ PDF Chatbot (RAG)")
+st.header("🤖 PDF Chatbot (RAG)")
 st.write("Upload the PDF to Ask Questions")
 
 st.sidebar.header("Upload Dataset")
