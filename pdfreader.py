@@ -125,6 +125,15 @@ st.markdown("""
         border-radius: 10px;
         margin-top: 10px;
     }
+    [data-testid="column"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stFileUploader, .stTextInput {
+    margin-top: 10px;
+}
     </style>
 """, unsafe_allow_html=True)
 
@@ -148,20 +157,20 @@ embed_model, generator = load_models()
 # -------------------------------
 # LAYOUT (2 COLUMNS 🔥)
 # -------------------------------
-col1, col2 = st.columns([1, 2])
+col1, col2 = st.columns(2)
 
-# -------------------------------
-# LEFT SIDE → Upload
-# -------------------------------
 with col1:
-    st.subheader("📂 Upload PDF")
-    uploaded_file = st.file_uploader("", type="pdf")
+    st.markdown("### 📂 Upload PDF")
 
-# -------------------------------
-# RIGHT SIDE → Chat
-# -------------------------------
+    with st.container():
+        uploaded_file = st.file_uploader(" ", type="pdf")
+
 with col2:
-    st.subheader("💬 Ask Questions")
+    st.markdown("### 💬 Ask Questions")
+
+    with st.container():
+        if uploaded_file is None:
+            st.info("👉 Upload a PDF to start chatting")
 
     if uploaded_file is not None:
         reader = PdfReader(uploaded_file)
