@@ -111,7 +111,7 @@ st.markdown("""
         text-align: center;
         font-size: 18px;
         color: #9CA3AF;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .stTextInput>div>div>input {
         background-color: #1F2937;
