@@ -107,6 +107,9 @@ st.markdown("""
         font-weight: bold;
         margin-bottom: 10px;
     }
+    .block-container {
+    padding-top: 2rem !important;
+    }
     .subtitle {
         text-align: center;
         font-size: 18px;
