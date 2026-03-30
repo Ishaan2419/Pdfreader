@@ -15,7 +15,6 @@ def load_models():
     return embed_model, generator
 
 embed_model, generator = load_models()
-st.image("rr.png", width=40)
 st.header("📄 PDF Chatbot (RAG)")
 st.write("Upload the PDF to Ask Questions")
 
