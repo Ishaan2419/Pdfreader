@@ -150,20 +150,14 @@ embed_model, generator = load_models()
 # -------------------------------
 # LAYOUT (2 COLUMNS 🔥)
 # -------------------------------
-col1, col2 = st.columns(2)
+col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.markdown("### 📂 Upload PDF")
-
-    with st.container():
-        uploaded_file = st.file_uploader(" ", type="pdf")
+    st.subheader("📂 Upload PDF")
+    uploaded_file = st.file_uploader("", type="pdf")
 
 with col2:
-    st.markdown("### 💬 Ask Questions")
-
-    with st.container():
-        if uploaded_file is None:
-            st.info("👉 Upload a PDF to start chatting")
+    st.subheader("💬 Ask Questions")
 
     if uploaded_file is not None:
         reader = PdfReader(uploaded_file)
