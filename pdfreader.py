@@ -44,7 +44,7 @@ if upload_file is not None:
     index.add(embeddings)
 
     st.success("✅ PDF processed successfully!")
-    st.subheader("Ask a question:")
+    st.subheader("❓ Ask a Question:")
     query = st.text_input("---------")
 
     if query:
