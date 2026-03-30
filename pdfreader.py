@@ -45,7 +45,7 @@ if upload_file is not None:
 
     st.success("✅ PDF processed successfully!")
     st.subheader("Ask a question:")
-    query = st.text_input()
+    query = st.text_input("---------")
 
     if query:
         # Encode query
