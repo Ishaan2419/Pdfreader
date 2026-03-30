@@ -108,7 +108,7 @@ st.markdown("""
         margin-bottom: 10px;
     }
     .upload-section {
-    margin-top: -40px;
+    margin-top: -90px;
      }
     .subtitle {
         text-align: center;
