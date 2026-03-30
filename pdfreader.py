@@ -125,15 +125,8 @@ st.markdown("""
         border-radius: 10px;
         margin-top: 10px;
     }
-    [data-testid="column"] {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 
-.stFileUploader, .stTextInput {
-    margin-top: 10px;
-}
+   
     </style>
 """, unsafe_allow_html=True)
 
